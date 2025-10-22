@@ -556,149 +556,6 @@ body {
     gap: 2px;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .header h1 {
-        font-size: 28px;
-    }
-
-    /* Contact Banner */
-    .contact-banner {
-        margin: 16px;
-        padding: 16px 16px 48px 16px;
-    }
-
-    .contact-info {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 40px;
-    }
-
-    .description {
-        font-size: 20px;
-        line-height: 1.5;
-    }
-
-    .contact-cta {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .contact-buttons {
-        display: flex;
-        flex-direction: row;
-        gap: 8px;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .whatsapp-btn {
-        padding: 10px 16px;
-        font-size: 14px;
-        border-radius: 50px;
-        width: 100%;
-    }
-
-    .call-btn {
-        padding: 16px 32px;
-        font-size: 14px;
-        font-weight: 500;
-        border-radius: 50px;
-        justify-content: center;
-        align-items: center;
-        background-color: #FF9900;
-        /* Primary-500 */
-        color: #060707;
-        /* Gray/950 */
-        font-weight: 600;
-        display: flex;
-        width: 100%;
-        border: none;
-    }
-
-    .phone-info-div {
-        gap: 4px;
-        order: 3;
-    }
-
-    .phone-number {
-        font-size: 20px;
-    }
-
-    .phone-hours {
-        font-size: 12px;
-    }
-
-    /* Social Media */
-    .social-media {
-        padding: 24px 16px;
-        margin: 32px 16px;
-    }
-
-    .social-icons {
-        gap: 9px;
-    }
-
-    /* Contact Methods */
-    .contact-methods {
-        margin: 48px 16px;
-    }
-
-    .contact-methods h2 {
-        font-size: 28px;
-    }
-
-    .methods-grid {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .method-card {
-        padding: 32px 16px;
-        gap: 24px;
-    }
-
-    .method-card h3 {
-        font-size: 18px;
-    }
-
-    .method-card p {
-        font-size: 14px;
-    }
-
-    .method-btn {
-        padding: 8px 24px;
-        font-size: 14px;
-    }
-
-    /* Collaboration Section */
-    .collaboration {
-        padding: 48px 16px;
-        margin: 48px 16px;
-    }
-
-    .collaboration h2 {
-        font-size: 28px;
-    }
-
-    .collaboration-content {
-        gap: 48px;
-    }
-
-    .collaboration-grid {
-        flex-direction: column;
-    }
-
-
-    .collab-text h3 {
-        font-size: 18px;
-    }
-
-    .collab-text p {
-        font-size: 16px;
-    }
-}
-
 /* FAQ Mobile Section Styles */
 .faq-mobile-section {
     display: flex;
@@ -841,13 +698,164 @@ body {
 }
 
 
-/* Desktop FAQ section - hide on mobile */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 28px;
+    }
+
+    /* Contact Banner */
+    .contact-banner {
+        margin: 16px;
+        padding: 16px 16px 48px 16px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 40px;
+    }
+
+    .description {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .contact-cta {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .contact-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .whatsapp-btn {
+        padding: 10px 16px;
+        font-size: 14px;
+        border-radius: 50px;
+        width: 100%;
+    }
+
+    .call-btn {
+        padding: 16px 32px;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 50px;
+        justify-content: center;
+        align-items: center;
+        background-color: #FF9900;
+        /* Primary-500 */
+        color: #060707;
+        /* Gray/950 */
+        display: flex;
+        width: 100%;
+        border: none;
+        flex-shrink: 1;
+    }
+
+    .phone-info-div {
+        gap: 4px;
+        order: 3;
+    }
+
+    .phone-number {
+        font-size: 20px;
+    }
+
+    .phone-hours {
+        font-size: 12px;
+    }
+
+    /* Social Media */
+    .social-media {
+        padding: 24px 16px;
+        margin: 32px 16px;
+    }
+
+    .social-icons {
+        gap: 9px;
+    }
+
+    /* Contact Methods */
+    .contact-methods {
+        margin: 48px 16px;
+    }
+
+    .contact-methods h2 {
+        font-size: 28px;
+    }
+
+    .methods-grid {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .method-card {
+        padding: 32px 16px;
+        gap: 24px;
+    }
+
+    .method-card h3 {
+        font-size: 18px;
+    }
+
+    .method-card p {
+        font-size: 14px;
+    }
+
+    .method-btn {
+        padding: 8px 24px;
+        font-size: 14px;
+    }
+
+    /* Collaboration Section */
+    .collaboration {
+        padding: 48px 16px;
+        margin: 48px 16px;
+    }
+
+    .collaboration h2 {
+        font-size: 28px;
+    }
+
+    .collaboration-content {
+        gap: 48px;
+    }
+
+    .collaboration-grid {
+        flex-direction: column;
+    }
+
+
+    .collab-text h3 {
+        font-size: 18px;
+    }
+
+    .collab-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .contact-banner {
+        margin: 16px;
+    }
+    .collaboration {
+        margin: 48px 16px;
+    }
+}
+
 @media (max-width: 1024px) {
     .faq-section:not(.faq-mobile-section) {
         display: none;
     }
 }
-
 /* Hide mobile FAQ on desktop */
 @media (min-width: 1025px) {
     .faq-mobile-section {
