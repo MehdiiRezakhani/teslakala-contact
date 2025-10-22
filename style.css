@@ -557,7 +557,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .header h1 {
         font-size: 28px;
     }
@@ -842,14 +842,14 @@ body {
 
 
 /* Desktop FAQ section - hide on mobile */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .faq-section:not(.faq-mobile-section) {
         display: none;
     }
 }
 
 /* Hide mobile FAQ on desktop */
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
     .faq-mobile-section {
         display: none;
     }
