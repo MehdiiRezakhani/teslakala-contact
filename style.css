@@ -70,9 +70,18 @@ body {
     gap: 2px;
 }
 
+.phone-info-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+    margin-top: 11px;
+}
+
 .contact-cta {
     display: flex;
     gap: 24px;
+    align-items: flex-start;
 }
 
 .phone-icon {
@@ -126,11 +135,10 @@ body {
 .social-media {
     text-align: center;
     margin: 32px auto;
-    background-color: #F5F6F6;
-    /* Gray/50 */
     max-width: 1110px;
     padding: 40px;
     border-radius: 8px;
+    border:1px solid #E4E9E9;
 }
 
 .social-icons {
@@ -140,44 +148,25 @@ body {
 }
 
 .social-icon {
-    width: 40px;
-    height: 40px;
     border-radius: 50%;
-    display: inline-block;
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 100%;
     background-color: #E4E9E9;
     /* Gray/100 */
     padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.social-icon.instagram {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 24 24'%3E%3Cpath d='M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z'/%3E%3C/svg%3E");
-}
-
-.social-icon.whatsapp {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 24 24'%3E%3Cpath d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488'/%3E%3C/svg%3E");
-}
-
-.social-icon.aparat {
-    background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.9039 1.44835C2.47661 1.44562 -1.7443 11.6329 4.21297 17.592C5.53549 18.9149 7.22061 19.8158 9.0552 20.1809C10.8898 20.546 12.7915 20.3589 14.5197 19.6432C16.2479 18.9275 17.7251 17.7153 18.7644 16.16C19.8037 14.6048 20.3584 12.7762 20.3584 10.9056C20.3584 5.6838 16.1266 1.45017 10.9039 1.44835ZM5.54842 6.16562C6.00388 3.8038 9.08751 3.17108 10.4357 5.16289C11.7839 7.15471 10.0521 9.78289 7.69024 9.32835C7.34188 9.26143 7.01012 9.12652 6.71392 8.93133C6.41773 8.73615 6.16289 8.48451 5.96399 8.19079C5.76508 7.89707 5.626 7.56704 5.5547 7.21956C5.48339 6.87207 5.48126 6.51393 5.54842 6.16562ZM9.47752 14.3365C9.01933 16.6974 5.9357 17.3256 4.58933 15.3329C3.24297 13.3402 4.97751 10.7147 7.33933 11.1702C7.68773 11.2375 8.01945 11.3728 8.31551 11.5684C8.61158 11.764 8.86618 12.0161 9.06476 12.3101C9.26334 12.6042 9.40201 12.9345 9.47284 13.2823C9.54366 13.63 9.54525 13.9882 9.47752 14.3365ZM10.623 12.1502C9.5757 11.9474 9.29388 10.5802 10.1766 9.98017C11.0584 9.38017 12.2275 10.1438 12.0312 11.1929C12.002 11.3484 11.9425 11.4965 11.8559 11.6289C11.7693 11.7613 11.6574 11.8752 11.5266 11.9642C11.3958 12.0532 11.2487 12.1154 11.0938 12.1473C10.9389 12.1792 10.7783 12.1802 10.623 12.1502ZM16.2584 15.6393C15.803 18.0011 12.7193 18.6329 11.3712 16.642C10.023 14.6511 11.7539 12.022 14.1166 12.4756C14.4651 12.5425 14.7969 12.6775 15.0932 12.8727C15.3894 13.068 15.6443 13.3197 15.8432 13.6135C16.0422 13.9073 16.1812 14.2375 16.2524 14.5851C16.3237 14.9327 16.3257 15.2909 16.2584 15.6393ZM14.4702 10.6374C12.1084 10.182 11.4766 7.09562 13.4684 5.74653C15.4602 4.39744 18.0875 6.13017 17.6339 8.49198C17.5674 8.84076 17.4327 9.173 17.2377 9.46968C17.0426 9.76635 16.7909 10.0216 16.4971 10.2209C16.2032 10.4202 15.8729 10.5596 15.1251 10.631C15.1774 10.7025 14.8189 10.7047 14.4702 10.6374ZM12.3484 21.1483L14.4066 21.7029C15.272 21.9325 16.1933 21.8091 16.9677 21.3597C17.7422 20.9104 18.3065 20.1718 18.5366 19.3065L19.1184 17.1229C17.4806 19.3051 15.047 20.7519 12.3475 21.1483M19.2957 3.27108L17.1475 2.69926C18.233 3.53444 19.1418 4.57684 19.8213 5.76598C20.5007 6.95512 20.9373 8.26735 21.1057 9.62653L21.6966 7.39108C21.9228 6.52641 21.797 5.60736 21.3468 4.83527C20.8966 4.06319 20.1587 3.50104 19.2948 3.27199M0.604788 12.5529L0.112969 14.4074C-0.116669 15.2729 0.00676342 16.1941 0.456131 16.9685C0.905499 17.743 1.64402 18.3073 2.50933 18.5374L4.42479 19.0483C2.37982 17.4406 1.0165 15.1214 0.604788 12.5529ZM9.40933 0.63744L7.40297 0.113804C6.97414 -0.000429045 6.527 -0.0290258 6.08712 0.0296483C5.64723 0.0883223 5.22322 0.233117 4.83932 0.455754C4.45543 0.678392 4.11917 0.974507 3.84978 1.32717C3.5804 1.67984 3.38315 2.08214 3.26933 2.51108L2.76842 4.4038C4.42114 2.3474 6.79614 1.00009 9.40933 0.63744Z' fill='%23060707'/%3E%3C/svg%3E");
-}
-
-.social-icon.linkedin {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 24 24'%3E%3Cpath d='M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z'/%3E%3C/svg%3E");
-}
-
-.social-icon.telegram {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 24 24'%3E%3Cpath d='M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z'/%3E%3C/svg%3E");
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 
 /* Contact Methods */
 .contact-methods {
     max-width: 1110px;
-    margin: 64px auto;
-    padding: 0 20px;
+    margin: 88px auto;
 }
 
 .contact-methods h2 {
@@ -185,7 +174,7 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 150%;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     color: #060707;
     /* Gray/950 */
 }
@@ -203,24 +192,19 @@ body {
     border: 1px solid #CCD5D3;
     /* Gray/200 */
     border-radius: 16px;
-    padding: 48px 16px;
+    padding: 40px 16px;
     text-align: center;
     box-shadow: 0px 2px 4px -2px #0607070D;
     box-shadow: 0px 4px 6px -1px #0607071A;
-    gap: 40px;
+    gap: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.method-card:hover {
-    background-color: #F5F6F6;
-    /* Gray/50 */
-}
-
 .method-card h3 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     color: #060707;
     /* Gray/950 */
 }
@@ -244,15 +228,10 @@ body {
 
 }
 
-.method-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 1px solid #FF9900;
-    padding: 40px;
+.method-icon svg {
+    width: 88px;
+    height: 88px;
+    object-fit: contain;
 }
 
 .phone-icon {
@@ -289,7 +268,7 @@ body {
     background-color: #FFD500;
     /* Gold */
     padding: 80px 40px;
-    margin: 120px auto;
+    margin: 80px auto;
     max-width: 1110px;
     border-radius: 16px;
 }
@@ -372,7 +351,7 @@ body {
 
 /* FAQ Section */
 .faq-section {
-    padding: 200px 128px;
+    padding: 120px 0px;
     background-color: #FFF2C5;
     /* Primary-100 */
 }
@@ -381,7 +360,7 @@ body {
     text-align: center;
     font-weight: 700;
     font-size: 32px;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
     color: #060707;
     /* Gray/950 */
 }
@@ -480,7 +459,7 @@ body {
 
 .faq-item {
     padding: 16px 40px 16px 24px;
-    background: #E5E5E5;
+    background: #E4E9E9;
     border-radius: 8px;
     font-size: 18px;
     color: #060707;
@@ -506,16 +485,14 @@ body {
     /* transition: all 0.3s ease; */
 }
 
-/* Hover state - light gray with arrow */
 .faq-item:hover {
-    background-color: #E5E5E5;
-    color: #060707;
+    background-color: #CCD5D3;
 }
 
 .faq-item:hover::before {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right: 10px solid #E5E5E5;
+    border-right: 10px solid #CCD5D3;
 }
 
 .faq-sidebar label {
@@ -535,6 +512,8 @@ body {
     background-color: #FFD500;
     color: #060707;
     font-weight: 600;
+    box-shadow: 0px 10px 10px 0px #0607070A;
+    box-shadow: 0px 20px 25px -5px #0607071A;
 }
 
 #tab1:checked~.faq-sidebar label[for="tab1"]::before,
@@ -549,19 +528,12 @@ body {
     border-right: 10px solid #FFD500;
 }
 
-.phone-info-div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 2px;
-}
-
 /* FAQ Mobile Section Styles */
 .faq-mobile-section {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding: 200px 24px;
+    padding: 88px 24px 160px 24px;
     background: #FFF2C5;
     /* Primary/100 */
 }
@@ -570,7 +542,7 @@ body {
     text-align: center;
     font-size: 28px;
     font-weight: 700;
-    margin-bottom: 120px;
+    margin-bottom: 48px;
     color: #060707;
 }
 
@@ -591,12 +563,9 @@ body {
 /* Accordion Item Styling */
 .faq-accordion-item {
     background: #FFFFFF;
-    border: 1px solid #FFD500;
     border-radius: 16px;
     overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0px 10px 10px 0px #0607070A;
-    box-shadow: 0px 20px 25px -5px #0607071A;
 }
 
 .accordion-header {
@@ -604,7 +573,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-    padding: 16px;
+    padding: 8px 8px 16px 16px;
     cursor: pointer;
     background: white;
     transition: all 0.3s ease;
@@ -612,7 +581,7 @@ body {
 }
 
 .accordion-title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     color: #060707;
     line-height: 1.9;
@@ -623,14 +592,14 @@ body {
     font-weight: 300;
     color: #060707;
     transition: all 0.3s ease;
-    margin-left: 16px;
+    margin-left: 8px;
 }
 
 .accordion-logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FFF2C5;
+    background: #FFFBEA;
     /* Primary 100 */
     border-radius: 50%;
     padding: 12px;
@@ -651,7 +620,7 @@ body {
 }
 
 .accordion-inner {
-    padding: 0px 16px 24px 16px;
+    padding: 0px 8px 24px 16px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -661,7 +630,7 @@ body {
 .accordion-inner p {
     text-align: right;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.9;
     color: #060707;
 }
@@ -684,6 +653,11 @@ body {
     /* Gray/900 */
 }
 
+.accordion-checkbox:checked~.faq-accordion-item {
+    border: 1px solid #FFD500;
+    box-shadow: 0px 10px 10px 0px #0607070A;
+    box-shadow: 0px 20px 25px -5px #0607071A;
+}
 /* When checkbox is checked */
 .accordion-checkbox:checked+.accordion-header {
     background: #FFFFFF;
@@ -691,6 +665,7 @@ body {
 
 .accordion-checkbox:checked+.accordion-header .accordion-icon {
     transform: rotate(45deg);
+    color: #7E928F;
 }
 
 .accordion-checkbox:checked~.accordion-content {
@@ -721,10 +696,14 @@ body {
         font-size: 20px;
         line-height: 1.5;
     }
+    .phone-info-div { 
+        margin-bottom: 0px;
+    }
 
     .contact-cta {
         flex-direction: column;
         gap: 8px;
+        align-items: flex-end;
     }
 
     .contact-buttons {
@@ -789,6 +768,7 @@ body {
 
     .contact-methods h2 {
         font-size: 28px;
+        margin-bottom: 40px;
     }
 
     .methods-grid {
@@ -817,7 +797,7 @@ body {
     /* Collaboration Section */
     .collaboration {
         padding: 48px 16px;
-        margin: 48px 16px;
+        margin: 48px 16px 80px 16px;
     }
 
     .collaboration h2 {
@@ -847,7 +827,7 @@ body {
         margin: 16px;
     }
     .collaboration {
-        margin: 48px 16px;
+        margin: 48px 16px 80px 16px;
     }
 }
 
