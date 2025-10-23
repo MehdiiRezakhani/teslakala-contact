@@ -138,7 +138,7 @@ body {
     max-width: 1110px;
     padding: 40px;
     border-radius: 8px;
-    border:1px solid #E4E9E9;
+    border: 1px solid #E4E9E9;
 }
 
 .social-icons {
@@ -653,23 +653,29 @@ body {
     /* Gray/900 */
 }
 
-.accordion-checkbox:checked~.faq-accordion-item {
-    border: 1px solid #FFD500;
-    box-shadow: 0px 10px 10px 0px #0607070A;
-    box-shadow: 0px 20px 25px -5px #0607071A;
-}
 /* When checkbox is checked */
 .accordion-checkbox:checked+.accordion-header {
     background: #FFFFFF;
 }
 
 .accordion-checkbox:checked+.accordion-header .accordion-icon {
-    transform: rotate(45deg);
     color: #7E928F;
+    font-size: 0;
+}
+
+.accordion-checkbox:checked+.accordion-header .accordion-icon::before {
+    content: '−';
+    font-size: 24px;
 }
 
 .accordion-checkbox:checked~.accordion-content {
     max-height: 1000px;
+}
+
+/* Style the parent item when checkbox is checked */
+.faq-accordion-item:has(.accordion-checkbox:checked) {
+    border: 1px solid #FFD500;
+    box-shadow: 0px 10px 10px 0px #0607070A, 0px 20px 25px -5px #0607071A;
 }
 
 
@@ -696,7 +702,8 @@ body {
         font-size: 20px;
         line-height: 1.5;
     }
-    .phone-info-div { 
+
+    .phone-info-div {
         margin-bottom: 0px;
     }
 
@@ -822,10 +829,11 @@ body {
     }
 }
 
-@media (max-width: 1200px) { 
+@media (max-width: 1200px) {
     .contact-banner {
         margin: 16px;
     }
+
     .collaboration {
         margin: 48px 16px 80px 16px;
     }
@@ -836,6 +844,7 @@ body {
         display: none;
     }
 }
+
 /* Hide mobile FAQ on desktop */
 @media (min-width: 1025px) {
     .faq-mobile-section {
