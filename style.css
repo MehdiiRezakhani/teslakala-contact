@@ -118,6 +118,7 @@ body {
     padding: 16px 24px;
     border-radius: 50px;
     font-size: 16px;
+    line-height: 1.2;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -242,6 +243,7 @@ body {
     font-family: 'Estedad', Arial, sans-serif;
     font-weight: 700;
     font-size: 14px;
+    line-height: 1.43;
     color: #060707;
     /* Gray/950 */
     padding: 10px 25.5px;
@@ -332,6 +334,7 @@ body {
     border-radius: 100px;
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.38;
     cursor: pointer;
     font-family: 'Estedad', Arial, sans-serif;
 }
@@ -436,6 +439,7 @@ body {
     cursor: pointer;
     font-family: 'Estedad', Arial, sans-serif;
     font-weight: 500;
+    line-height: 0.5;
 }
 
 .faq-btn:hover {
@@ -638,6 +642,7 @@ body {
     cursor: pointer;
     font-family: 'Estedad', Arial, sans-serif;
     font-weight: 500;
+    line-height: 1.43;
 }
 
 .accordion-inner button:hover {
@@ -791,6 +796,7 @@ body {
     .method-btn {
         padding: 8px 24px;
         font-size: 14px;
+        line-height: 1.72;
     }
 
     /* Collaboration Section */
