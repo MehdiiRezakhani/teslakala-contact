@@ -576,9 +576,17 @@ body {
     position: relative;
 }
 
+.accordion-header-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
 .accordion-title {
     font-size: 14px;
     font-weight: 700;
+    text-align: right;
     color: #060707;
     line-height: 1.9;
 }
