@@ -833,7 +833,8 @@ body {
     }
 
     .collaboration {
-        margin: 48px 16px 80px 16px;
+        margin-top: 48px;
+        margin-bottom:80px;
     }
 }
 
